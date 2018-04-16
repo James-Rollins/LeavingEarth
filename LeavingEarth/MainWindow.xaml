@@ -1,0 +1,213 @@
+﻿<Window x:Name="Leaving_Earth" x:Class="LeavingEarth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeavingEarth"
+        mc:Ignorable="d"
+        Title="Leaving Earth" Height="875" Width="1540" Icon="Images/EarthCard.jpg" ResizeMode="CanMinimize" WindowState="Maximized" KeyDown="Leaving_Earth_KeyDown">
+    <Grid x:Name="leGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/stars.jpg"></ImageBrush>
+        </Grid.Background>
+
+        <Image x:Name="Earth" HorizontalAlignment="Left" Height="150" Margin="1050,666,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/Earth.jpg"/>
+        <Image x:Name="Suborbit" HorizontalAlignment="Left" Height="150" Margin="1050,511,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/SuborbitalUnexplored.jpg"/>
+        <Image x:Name="EarthOrbit" HorizontalAlignment="Left" Height="150" Margin="1050,358,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/EarthOrbit.jpg"/>
+        <Image x:Name="InnerTransfer" HorizontalAlignment="Left" Height="150" Margin="1050,206,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/InnerPlanetsTransfer.jpg"/>
+        <Image x:Name="Ceres" HorizontalAlignment="Left" Height="150" Margin="1050,51,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/CeresUnexplored.jpg"/>
+        <Image x:Name="LunarFlyBy" HorizontalAlignment="Left" Height="150" Margin="1205,513,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/LunarFlyBy.jpg">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="LunarOrbit" HorizontalAlignment="Left" Height="150" Margin="1205,361,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/LunarOrbit.jpg">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="VenusFlyBy" HorizontalAlignment="Left" Height="150" Margin="1205,206,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/Earth.jpg" d:IsHidden="True"/>
+        <Image x:Name="VenusOrbit" HorizontalAlignment="Left" Height="150" Margin="1205,51,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/VenusOrbit.jpg">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Moon" HorizontalAlignment="Left" Height="150" Margin="1358,361,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/MoonUnexplored.jpg">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Venus" HorizontalAlignment="Left" Height="150" Margin="1360,51,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/VenusUnexplored.jpg">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="MarsFlyBy" HorizontalAlignment="Left" Height="150" Margin="895,51,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/MarsFlyBy.jpg">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Phobos" HorizontalAlignment="Left" Height="150" Margin="740,51,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/PhobosUnexplored.jpg">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="MarsOrbit" HorizontalAlignment="Left" Height="150" Margin="895,206,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/MarsOrbit.jpg">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Mars" HorizontalAlignment="Left" Height="150" Margin="740,206,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/Mars.jpg">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="SolarRadiation" HorizontalAlignment="Left" Height="150" Margin="820,436,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-2.3,-0.735" Source="Images/SolarRadiationUnexplored.jpg"/>
+        <Button x:Name="endTurn" Content="End Turn" HorizontalAlignment="Left" Margin="1435,801.05,0,0" VerticalAlignment="Top" Width="75" ToolTip="End your current turn." Click="endTurn_Click"/>
+        <TextBox x:Name="yearBox" HorizontalAlignment="Left" Height="23" Margin="1389,15,0,0" TextWrapping="Wrap" Text="1956" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="year" Content="Year" HorizontalAlignment="Left" Margin="1344,10,0,0" VerticalAlignment="Top" ToolTip="The current year" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="scoreBox" HorizontalAlignment="Left" Height="23" Margin="1151,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
+        <Label x:Name="score1" Content="Score" HorizontalAlignment="Left" Margin="1096,10,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="fundingBox" HorizontalAlignment="Left" Height="23" Margin="925,15,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Funding" HorizontalAlignment="Left" Margin="852,11,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
+        <Image x:Name="InnerTransfer_Copy" HorizontalAlignment="Left" Height="150" Margin="1205,206,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" Source="Images/VenusFlyBy.jpg">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="28" Margin="304,10,0,0" TextWrapping="Wrap" Text="Missions" VerticalAlignment="Top" Width="68" Foreground="#FFFAF7F7" FontSize="16"/>
+        <UniformGrid x:Name="Home" HorizontalAlignment="Left" Height="181.2" Margin="89.6,0,0,18.7" VerticalAlignment="Bottom" Width="579.6" Rows="1" Columns="4">
+            <Image x:Name="Craft1" HorizontalAlignment="Left" Margin="0,0,-11.8,0.4" Width="147" Source="Images/NASA1.jpg"/>
+            <Image x:Name="Craft2" HorizontalAlignment="Left" Margin="-0.4,0,-8.4,0.4" Width="144" Source="Images/NASA2.jpg"/>
+            <Image x:Name="Craft3" HorizontalAlignment="Left" Margin="-0.2,0,-18.6,0.4" Width="154" Source="Images/NASA3.jpg"/>
+            <Image x:Name="Craft4" HorizontalAlignment="Left" Margin="-0.2,0,-18.6,0.4" Width="154" Source="Images/NASA4.jpg"/>
+        </UniformGrid>
+        <Image x:Name="Spacecraft1" HorizontalAlignment="Left" Height="58.268" Margin="144.024,0,0,80.143" VerticalAlignment="Bottom" Width="45.281" Source="Images/SpacecraftNasa1.png" RenderTransformOrigin="-1.993,0.265" d:LayoutOverrides="HorizontalAlignment">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="47.49"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Spacecraft2" HorizontalAlignment="Left" Height="44.876" VerticalAlignment="Bottom" Width="74.216" Margin="231.525,0,0,20.895" Source="Images/SpacecraftNasa2.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="-113.816"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <UniformGrid x:Name="MissionsHolder" Margin="10,38,0,372.2" Rows="2" Columns="5" HorizontalAlignment="Left" Width="749.2">
+            <Image x:Name="Image1" Margin="0,0,38.18,8.7" Source="Images/ManOnMarsAndBack.jpg" Stretch="Fill" Visibility="Hidden"/>
+            <Image x:Name="Image2" Margin="0,0,38.18,8.7" Source="Images/ManOnMarsAndBack.jpg" Stretch="Fill" Visibility="Hidden"/>
+            <Image x:Name="Image3" Margin="0,0,38.18,8.7" Source="Images/ManOnMarsAndBack.jpg" Stretch="Fill" Visibility="Hidden"/>
+            <Image x:Name="Image4" Margin="0,0,38.18,8.7" Source="Images/ManOnMarsAndBack.jpg" Stretch="Fill" Visibility="Hidden"/>
+            <Image x:Name="Image5" Margin="0,0,38.18,8.7" Source="Images/ManOnMarsAndBack.jpg" Stretch="Fill" Visibility="Hidden"/>
+            <Image x:Name="Image6" Margin="0,0,38.18,30.3" Source="Images/ManOnMarsAndBack.jpg" Stretch="Fill" Visibility="Hidden"/>
+            <Image x:Name="Image7" Margin="0,0,38.18,30.3" Source="Images/ManOnMarsAndBack.jpg" Stretch="Fill" Visibility="Hidden"/>
+            <Image x:Name="Image8" Margin="0,0,38.18,30.3" Source="Images/ManOnMarsAndBack.jpg" Stretch="Fill" Visibility="Hidden"/>
+            <Image x:Name="Image9" Margin="0,0,38.18,30.3" Source="Images/ManOnMarsAndBack.jpg" Stretch="Fill" Visibility="Hidden"/>
+        </UniformGrid>
+        <Grid x:Name="AgencyMenu" HorizontalAlignment="Left" Margin="625,238,0,199.6" Width="372" Visibility="Hidden">
+            <Rectangle x:Name="backrect2" Stroke="White" StrokeThickness="2"/>
+            <Rectangle x:Name="toprect2" Stroke="White" Margin="10" StrokeThickness="2" Fill="#FFFAF5F5" Opacity="0.445"/>
+            <Button x:Name="CNES" Content="" VerticalAlignment="Top" Margin="60,72,244,0" Height="127" Opacity="0.7" Foreground="Black" Click="AgencySelection">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Button-CNES.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="ISAS" Content="" VerticalAlignment="Top" Margin="157,72,147,0" Height="127" Opacity="0.7" Foreground="Black" Click="AgencySelection">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Button-ISAS.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="NASA" Content="" VerticalAlignment="Top" Margin="97,222,207,0" Height="127" Opacity="0.7" Foreground="Black" Click="AgencySelection">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Button-NASA.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="OKb" Content="" VerticalAlignment="Top" Margin="202,222,102,0" Height="127" Opacity="0.7" Foreground="Black" Click="AgencySelection">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/button-OKb-1.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="SAC" Content="" VerticalAlignment="Top" Margin="252,72,52,0" Height="127" Opacity="0.7" Foreground="Black" Click="AgencySelection">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Button-SAC.jpg"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Grid x:Name="DifficultyMenu" Margin="625,251,537,186.6" Visibility="Hidden">
+            <Rectangle x:Name="backrect1" Stroke="White" StrokeThickness="2"/>
+            <Rectangle x:Name="toprect1" Stroke="White" Margin="10" StrokeThickness="2" Fill="#FFFAF5F5" Opacity="0.445"/>
+            <Button x:Name="Easy" Content="Easy" VerticalAlignment="Top" Margin="118.4,72.8,126.6,0" Height="34.36" Opacity="0.7" Background="White" Foreground="Black" Click="Difficulty"/>
+            <Button x:Name="Normal" Content="Normal" VerticalAlignment="Top" Margin="118.4,137.6,126.6,0" Height="34.36" Opacity="0.7" Background="White" Foreground="Black" Click="Difficulty"/>
+            <Button x:Name="Hard" Content="Hard" VerticalAlignment="Bottom" Margin="118.4,0,126.6,165.14" Height="34.36" Opacity="0.7" Background="White" Foreground="Black" Click="Difficulty"/>
+            <Button x:Name="VeryHard" Content="Very Hard" VerticalAlignment="Bottom" Margin="118.4,0,126.6,90.74" Height="34.36" Opacity="0.7" Background="White" Foreground="Black" Click="Difficulty"/>
+        </Grid>
+        <Grid x:Name="MainMenu" Margin="625,238,537,199.9" d:IsHidden="True">
+            <Rectangle x:Name="backrect" Stroke="White" StrokeThickness="2"/>
+            <Rectangle x:Name="toprect" Stroke="White" Margin="10" StrokeThickness="2" Fill="#FFFAF5F5" Opacity="0.445"/>
+            <Button x:Name="NewGame" Content="New Game" VerticalAlignment="Top" Margin="118.4,72.8,126.6,0" Height="34.36" Opacity="0.7" Background="White" Foreground="Black" Click="NewGame_Click"/>
+            <Button x:Name="Exit_Game" Content="Exit Game" VerticalAlignment="Top" Margin="118.4,137.6,126.6,0" Height="34.36" Opacity="0.7" Background="White" Foreground="Black" Click="Exit_Game_Click"/>
+        </Grid>
+
+
+
+    </Grid>
+</Window>

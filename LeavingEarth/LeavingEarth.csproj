@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B7657B8-420B-4278-8334-034CB876CE1E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LeavingEarth</RootNamespace>
+    <AssemblyName>LeavingEarth</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Advancement.cs" />
+    <Compile Include="Astronaut.cs" />
+    <Compile Include="Capsule.cs" />
+    <Compile Include="Cards.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="Maneuver.cs" />
+    <Compile Include="Mission.cs" />
+    <Compile Include="Outcome.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Radiation.cs" />
+    <Compile Include="Rocket.cs" />
+    <Compile Include="Sample.cs" />
+    <Compile Include="Spacecraft.cs" />
+    <Compile Include="Supply.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Earth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\EarthCard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cards.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Info.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\stars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SpacecraftNasa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AldrinCapsule.jpg" />
+    <Resource Include="Images\AldrinCapsuleDamaged.jpg" />
+    <Resource Include="Images\ApolloCapsuleDamaged.jpg" />
+    <Resource Include="Images\ApolloCapsule.jpg" />
+    <Resource Include="Images\Armstrong.jpg" />
+    <Resource Include="Images\Atlas.jpg" />
+    <Resource Include="Images\AtlasAdvancement.jpg" />
+    <Resource Include="Images\AtlasDamaged.jpg" />
+    <Resource Include="Images\Bykovsky.jpg" />
+    <Resource Include="Images\Ceres.jpg" />
+    <Resource Include="Images\CeresIce.jpg" />
+    <Resource Include="Images\CeresSample.jpg" />
+    <Resource Include="Images\CeresSampleOnEarth.jpg" />
+    <Resource Include="Images\CeresUnexplored.jpg" />
+    <Resource Include="Images\CNES1.jpg" />
+    <Resource Include="Images\CNES2.jpg" />
+    <Resource Include="Images\CNES3.jpg" />
+    <Resource Include="Images\CNES4.jpg" />
+    <Resource Include="Images\Collins.jpg" />
+    <Resource Include="Images\EagleCapsule.jpg" />
+    <Resource Include="Images\EagleCapsuleDamaged.jpg" />
+    <Resource Include="Images\EarthOrbit.jpg" />
+    <Resource Include="Images\Feoktistov.jpg" />
+    <Resource Include="Images\Gagarin.jpg" />
+    <Resource Include="Images\Glenn.jpg" />
+    <Resource Include="Images\Grissom.jpg" />
+    <Resource Include="Images\img010.jpg" />
+    <Resource Include="Images\InnerPlanetsTransfer.jpg" />
+    <Resource Include="Images\Ion.jpg" />
+    <Resource Include="Images\IonAdvancement.jpg" />
+    <Resource Include="Images\IonDamaged.jpg" />
+    <Resource Include="Images\ISAS1.jpg" />
+    <Resource Include="Images\ISAS2.jpg" />
+    <Resource Include="Images\ISAS3.jpg" />
+    <Resource Include="Images\ISAS4.jpg" />
+    <Resource Include="Images\Juno.jpg" />
+    <Resource Include="Images\JunoAdvancement.jpg" />
+    <Resource Include="Images\JunoDamaged.jpg" />
+    <Resource Include="Images\Komarov.jpg" />
+    <Resource Include="Images\LandingAdvancement.jpg" />
+    <Resource Include="Images\LifeSampleOnEarth.jpg" />
+    <Resource Include="Images\LifeSupportAdvancement.jpg" />
+    <Resource Include="Images\Lovell.jpg" />
+    <Resource Include="Images\LunarFlyBy.jpg" />
+    <Resource Include="Images\LunarOrbit.jpg" />
+    <Resource Include="Images\Major.jpg" />
+    <Resource Include="Images\ManInSpaceStartOfYear.jpg" />
+    <Resource Include="Images\ManOnMarsAndBack.jpg" />
+    <Resource Include="Images\ManOnMarsStartofYear.jpg" />
+    <Resource Include="Images\ManOnMoonYear.jpg" />
+    <Resource Include="Images\ManOnVenusAndBack.jpg" />
+    <Resource Include="Images\ManOnVenusStartOfYear.jpg" />
+    <Resource Include="Images\ManToEarthOrbitAndBack.jpg" />
+    <Resource Include="Images\ManToMoonAndBack.jpg" />
+    <Resource Include="Images\ManToSpaceAndBack.jpg" />
+    <Resource Include="Images\Mars.jpg" />
+    <Resource Include="Images\MarsFlyBy.jpg" />
+    <Resource Include="Images\MarsLife.jpg" />
+    <Resource Include="Images\MarsMineral.jpg" />
+    <Resource Include="Images\MarsOrbit.jpg" />
+    <Resource Include="Images\MarsSample.jpg" />
+    <Resource Include="Images\MarsSampleonEarth.jpg" />
+    <Resource Include="Images\MarsUnexplored.jpg" />
+    <Resource Include="Images\Mercury.jpg" />
+    <Resource Include="Images\MercuryFlyBy.jpg" />
+    <Resource Include="Images\MercuryMinerals.jpg" />
+    <Resource Include="Images\MercuryOrbit.jpg" />
+    <Resource Include="Images\MercurySample.jpg" />
+    <Resource Include="Images\MercurySampleOnEarth.jpg" />
+    <Resource Include="Images\MercuryUnexplored.jpg" />
+    <Resource Include="Images\Minor.jpg" />
+    <Resource Include="Images\Moon.jpg" />
+    <Resource Include="Images\MoonDust.jpg" />
+    <Resource Include="Images\MoonMicrobes.jpg" />
+    <Resource Include="Images\MoonMinerals.jpg" />
+    <Resource Include="Images\MoonSample.jpg" />
+    <Resource Include="Images\MoonSampleOnEarth.jpg" />
+    <Resource Include="Images\MoonUnexplored.jpg" />
+    <Resource Include="Images\NASA1.jpg" />
+    <Resource Include="Images\NASA2.jpg" />
+    <Resource Include="Images\NASA3.jpg" />
+    <Resource Include="Images\NASA4.jpg" />
+    <Resource Include="Images\OKb1.jpg" />
+    <Resource Include="Images\OKb2.jpg" />
+    <Resource Include="Images\OKb3.jpg" />
+    <Resource Include="Images\OKb4.jpg" />
+    <Resource Include="Images\Phobos.jpg" />
+    <Resource Include="Images\PhoboSample.jpg" />
+    <Resource Include="Images\PhobosMetallic.jpg" />
+    <Resource Include="Images\PhobosSampleOnEarth.jpg" />
+    <Resource Include="Images\PhobosUnexplored.jpg" />
+    <Resource Include="Images\Probe.jpg" />
+    <Resource Include="Images\ProbeDamaged.jpg" />
+    <Resource Include="Images\ProbeInEarthOrbit.jpg" />
+    <Resource Include="Images\ProbeInSpace.jpg" />
+    <Resource Include="Images\ProbeOnCeres.jpg" />
+    <Resource Include="Images\ProbeOnMars.jpg" />
+    <Resource Include="Images\ProbeOnMercury.jpg" />
+    <Resource Include="Images\ProbeOnMoon.jpg" />
+    <Resource Include="Images\ProbeOnVenus.jpg" />
+    <Resource Include="Images\QuickHelp.jpg" />
+    <Resource Include="Images\RendezvousAdvancement.jpg" />
+    <Resource Include="Images\RevealMars.jpg" />
+    <Resource Include="Images\RevealMercury.jpg" />
+    <Resource Include="Images\RevealMoon.jpg" />
+    <Resource Include="Images\RevealVenus.jpg" />
+    <Resource Include="Images\SAC1.jpg" />
+    <Resource Include="Images\SAC2.jpg" />
+    <Resource Include="Images\SAC3.jpg" />
+    <Resource Include="Images\SAC4.jpg" />
+    <Resource Include="Images\Saturn.jpg" />
+    <Resource Include="Images\SaturnDamaged.jpg" />
+    <Resource Include="Images\Shepard.jpg" />
+    <Resource Include="Images\SolarRadiationLevel0.jpg" />
+    <Resource Include="Images\SolarRadiationLevel1.jpg" />
+    <Resource Include="Images\SolarRadiationLevel2.jpg" />
+    <Resource Include="Images\SolarRadiationUnexplored.jpg" />
+    <Resource Include="Images\Soyuz.jpg" />
+    <Resource Include="Images\SoyuzDamaged.jpg" />
+    <Resource Include="Images\SpacecraftCNES1.png" />
+    <Resource Include="Images\SpacecraftCNES4.png" />
+    <Resource Include="Images\SpacecraftISAS1.png" />
+    <Resource Include="Images\SpacecraftISAS4.png" />
+    <Resource Include="Images\SpacecraftNasa4.png" />
+    <Resource Include="Images\SpacecraftOKb-11.png" />
+    <Resource Include="Images\SpacecraftOKb-14.png" />
+    <Resource Include="Images\SpacecraftSAC1.png" />
+    <Resource Include="Images\SpacecraftSAC4.png" />
+    <Resource Include="Images\SpacecraftCNES2.png" />
+    <Resource Include="Images\SpacecraftCNES3.png" />
+    <Resource Include="Images\SpacecraftISAS2.png" />
+    <Resource Include="Images\SpacecraftISAS3.png" />
+    <Resource Include="Images\SpacecraftNasa2.png" />
+    <Resource Include="Images\SpacecraftNasa3.png" />
+    <Resource Include="Images\SpacecraftOKb-12.png" />
+    <Resource Include="Images\SpacecraftOKb-13.png" />
+    <Resource Include="Images\SpacecraftSAC2.png" />
+    <Resource Include="Images\SpacecraftSAC3.png" />
+    <Resource Include="Images\Suborbital.jpg" />
+    <Resource Include="Images\Suborbital1.jpg" />
+    <Resource Include="Images\Suborbital3.jpg" />
+    <Resource Include="Images\SuborbitalUnexplored.jpg" />
+    <Resource Include="Images\Success.jpg" />
+    <Resource Include="Images\Supplies1.jpg" />
+    <Resource Include="Images\Supplies5.jpg" />
+    <Resource Include="Images\SurveyingAdvancement.jpg" />
+    <Resource Include="Images\Tereshkova.jpg" />
+    <Resource Include="Images\Time.png" />
+    <Resource Include="Images\Titov.jpg" />
+    <Resource Include="Images\VenusFlyBy.jpg" />
+    <Resource Include="Images\VenusLife.jpg" />
+    <Resource Include="Images\VenusLiquid.jpg" />
+    <Resource Include="Images\VenusOrbit.jpg" />
+    <Resource Include="Images\VenusPressure.jpg" />
+    <Resource Include="Images\VenusSample.jpg" />
+    <Resource Include="Images\VenusSampleOnEarth.jpg" />
+    <Resource Include="Images\VenusUnexplored.jpg" />
+    <Resource Include="Images\VostokCapsule.jpg" />
+    <Resource Include="Images\VostokCapsuleDamaged.jpg" />
+    <Resource Include="Images\Walker.jpg" />
+    <Resource Include="Images\YearMarker.png" />
+    <Resource Include="Images\Years56-65.jpg" />
+    <Resource Include="Images\Years66-76.jpg" />
+    <Resource Include="Images\Yegorov.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CNES-Flip.jpg" />
+    <Resource Include="Images\ISAS-flip.jpg" />
+    <Resource Include="Images\NASA-Flip.jpg" />
+    <Resource Include="Images\OKb-1-Flip.jpg" />
+    <Resource Include="Images\SAC-Flip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CNES.jpg" />
+    <Resource Include="Images\ISAS.jpg" />
+    <Resource Include="Images\NASA.jpg" />
+    <Resource Include="Images\OKb-1.jpg" />
+    <Resource Include="Images\SAC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Button-CNES.jpg" />
+    <Resource Include="Images\Button-ISAS.jpg" />
+    <Resource Include="Images\Button-NASA.jpg" />
+    <Resource Include="Images\button-OKb-1.jpg" />
+    <Resource Include="Images\Button-SAC.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Cards>
+  <Card type="Rocket" name="Juno" thrust="4" mass="1" price="1" time="0" image="Images/Juno.jpg"/>
+  <Card type="Rocket" name="Ion" thrust="5" mass="1"  price="10" time="1" image="Images/Ion.jpg" />
+  <Card type="Rocket" name="Atlas" thrust="27" mass="4" price="5" time="0" image="Images/Atlas.jpg" />
+  <Card type="Rocket" name="Soyuz" thrust="80" mass="9" price="8" time="0" image="Images/Soyuz.jpg" />
+  <Card type="Rocket" name="Saturn" thrust="200" mass="20" price="15" time="0" image="Images/Saturn.jpg" />
+  <Card type="Supplies" name="Supplies5" mass="5" price="5" image="Images/Supplies5.jpg"/>
+  <Card type="Supplies" name="Supplies1" mass="1" price="1" image="Images/Supplies1.jpg"/>
+  <Card type="Sample" name="Mercury" mass="1" image="Images/MercurySampleOnEarth.jpg"/>
+  <Card type="Sample" name="Venus" mass="1" image="Images/VenusSampleOnEarth.jpg"/>
+  <Card type="Sample" name="Phobos" mass="1" image="Images/PhobosSampleOnEarth.jpg"/>
+  <Card type="Sample" name="Moon" mass="1" image="Images/MoonSampleOnEarth.jpg"/>
+  <Card type="Sample" name="Ceres" mass="1" image="Images/CeresSampleOnEarth.jpg"/>
+  <Card type="Sample" name="Mars" mass="1" image="Images/MarsSampleOnEarth.jpg"/>
+  <Card type="Capsule" name="Aldrin" mass="3" price="4" rads="-1" payload="8" image="Images/AldrinCapsule.jpg"/>
+  <Card type="Capsule" name="Apollo" mass="3" price="4" rads="0" payload="3" image="Images/ApolloCapsule.jpg"/>
+  <Card type="Capsule" name="Eagle" mass="1" price="4" rads="0" payload="2" image="Images/EagleCapsule.jpg"/>
+  <Card type="Capsule" name="Vostok" mass="2" price="2" rads="0" payload="1" image="Images/VostokCapsule.jpg"/>
+  <Card type="Capsule" name="Probe" mass="1" price="2" rads="0" payload="0" image="Images/Probe.jpg"/>
+  <Card type="Astronaut" name="Valery Bykovosky" price="5" skill="Doctor" image="Images/Bykovsky.jpg"/>
+  <Card type="Astronaut" name="Mike Collins" price="5" skill="Doctor" image="Images/Collins.jpg"/>
+  <Card type="Astronaut" name="Valentina Tereshkova" price="5" skill="Doctor" image="Images/Tereshkova.jpg"/>
+  <Card type="Astronaut" name="Gherman Titov" price="5" skill="Doctor" image="Images/Titov.jpg"/>
+  <Card type="Astronaut" name="Boris Yegorov" price="5" skill="Doctor" image="Images/Yegorov.jpg"/>
+  <Card type="Astronaut" name="Buzz Aldrin" price="5" skill="Mechanic" image="/"/>
+  <Card type="Astronaut" name="Konstantin Feoktistov" price="5" skill="Mechanic" image="Images/Feoktistov.jpg"/>
+  <Card type="Astronaut" name="Gus Grissom" price="5" skill="Mechanic" image="Images/Grissom.jpg"/>
+  <Card type="Astronaut" name="Vladimir Komarov" price="5" skill="Mechanic" image="Images/Komarov.jpg"/>
+  <Card type="Astronaut" name="Jim Lovell" price="5" skill="Mechanic" image="Images/Lovell.jpg"/>
+  <Card type="Astronaut" name="Neil Armstrong" price="5" skill="Pilot" image="Images/Armstrong.jpg"/>
+  <Card type="Astronaut" name="Yuri Gagarin" price="5" skill="Pilot" image="Images/Gagarin.jpg"/>
+  <Card type="Astronaut" name="John Glenn" price="5" skill="Pilot" image="Images/Glenn.jpg"/>
+  <Card type="Astronaut" name="Alan Shepard" price="5" skill="Pilot" image="Images/Shepard.jpg"/>
+  <Card type="Astronaut" name="Joseph Walker" price="5" skill="Pilot" image="Images/Walker.jpg"/>
+  <Card type="Location" name="Earth" multiple="" incapacitation="0" payment="0" unknown="" image="Images/Earth.jpg">
+    <Maneuver location="Earth Orbit" difficulty="8" time="0" hazard="" requirement="" atmosphere=""/>
+    <Maneuver location="Suborbital" difficulty="3" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Earth Orbit" multiple="" incapacitation="0" payment="0" unknown="" image="Images/EarthOrbit.jpg">
+    <Maneuver location="Earth" difficulty="0" time="0" hazard="" requirement="Landing" atmosphere="Yes"/>
+    <Maneuver location="Mars Orbit" difficulty="5" time="3" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Mars Fly-By" difficulty="3" time="3" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Inner" difficulty="3" time="1" hazard="" requirement="" atmosphere=""/>
+    <Maneuver location="Outer" difficulty="6" time="1" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Lunar Orbit" difficulty="3" time="0" hazard="" requirement="" atmosphere=""/>
+    <Maneuver location="Lunar Fly-By" difficulty="1" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Suborbital" multiple="yes" incapacitation=".5" payment="0" unknown="" image="Images/Suborbital3.jpg">
+    <Maneuver location="Earth" difficulty="0" time="0" hazard="" requirement="Landing" atmosphere="Yes"/>
+    <Maneuver location="Earth Orbit" difficulty="5" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Suborbital" multiple="yes" incapacitation=".1667" payment="0" unknown="" image="Images/Suborbital1.jpg">
+    <Maneuver location="Earth" difficulty="0" time="0" hazard="" requirement="Landing" atmosphere="Yes"/>
+    <Maneuver location="Earth Orbit" difficulty="5" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Suborbital" multiple="yes" incapacitation="0" payment="0" unknown="" image="Images/Suborbital.jpg">
+    <Maneuver location="Earth" difficulty="0" time="0" hazard="" requirement="Landing" atmosphere="Yes"/>
+    <Maneuver location="Earth Orbit" difficulty="5" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Suborbital" multiple="yes" incapacitation="0" payment="0" unknown="Yes" image="Images/SuborbitalUnexplored.jpg">
+    <Maneuver location="Earth" difficulty="0" time="0" hazard="" requirement="Landing" atmosphere="Yes"/>
+    <Maneuver location="Earth Orbit" difficulty="5" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Inner" multiple="" incapacitation="0" payment="0" unknown="" image="Images/InnerPlanetsTransfer.jpg">
+    <Maneuver location="Earth Orbit" difficulty="3" time="1" hazard="Lost" requirement="" atmosphere=""/>
+    <Maneuver location="Mars Orbit" difficulty="4" time="2" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Ceres" difficulty="5" time="1" requirement="Landing" hazard="Radiation" atmosphere=""/>
+    <Maneuver location="Venus Orbit" difficulty="3" time="1" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Venus Fly-By" difficulty="2" time="1" hazard="Radiation" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Lunar Fly-By" multiple="" incapacitation="0" payment="0" unknown="" image="Images/LunarFlyBy.jpg">
+    <Maneuver location="Moon" difficulty="4" time="0" hazard="" requirement="Landing" atmosphere=""/>
+    <Maneuver location="Lunar Orbit" difficulty="2" time="1" hazard="" requirement="" atmosphere=""/>
+    <Maneuver location="Earth Orbit" difficulty="1" time="1" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Lunar Orbit" multiple="" incapacitation="0" payment="0" unknown="" image="Images/LunarOrbit.jpg">
+    <Maneuver location="Moon" difficulty="2" time="0" hazard="" requirement="Landing" atmosphere=""/>
+    <Maneuver location="Earth Orbit" difficulty="3" time="1" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Moon" multiple="yes" incapacitation="0" payment="0" unknown="" image="Images/Moon.jpg">
+    <Maneuver location="Lunar Orbit" difficulty="2" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Moon" multiple="yes" incapacitation="0" payment="0" unknown="Microbes" image="Images/MoonMicrobes.jpg">
+    <Maneuver location="Lunar Orbit" difficulty="2" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Moon" multiple="yes" incapacitation="0" payment="0" unknown="Spacecraft Destroyed" image="Images/MoonDust.jpg">
+    <Maneuver location="Lunar Orbit" difficulty="2" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Moon" multiple="yes" incapacitation="0" unknown="Valuable Minerals" payment="25" image="Images/MoonMinerals.jpg">
+    <Maneuver location="Lunar Orbit" difficulty="2" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Venus Fly-By" multiple="" incapacitation="0" payment="0" unknown="" image="Images/VenusFlyBy.jpg">
+    <Maneuver location="Venus" difficulty="1" time="0" hazard="" requirement="Landing" atmosphere="Yes"/>
+    <Maneuver location="Venus Orbit" difficulty="1" time="1" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Venus Orbit" multiple="" incapacitation="0" payment="0" unknown="" image="Images/VenusOrbit.jpg">
+    <Maneuver location="Venus" difficulty="0" time="0" hazard="" requirement="Landing" atmosphere="Yes"/>
+    <Maneuver location="Outer" difficulty="9" time="1" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Inner" difficulty="3" time="1" hazard="Radiation" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Mars Orbit" multiple="" incapacitation="0" payment="0" unknown="" image="Images/MarsOrbit.jpg">
+    <Maneuver location="Mars" difficulty="0" time="0" hazard="" requirement="Landing" atmosphere="Yes"/>
+    <Maneuver location="Earth Orbit" difficulty="5" time="3" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Inner" difficulty="4" time="2" hazard="Radition" requirement="" atmosphere=""/>
+    <Maneuver location="Outer" difficulty="5" time="1" hazard="Radition" requirement="" atmosphere=""/>
+    <Maneuver location="Phobos" difficulty="1" time="1" hazard="" requirement="Landing" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Mars Fly-By" multiple="" incapacitation="0" payment="0" unknown="" image="Images/MarsFlyBy.jpg">
+    <Maneuver location="Mars Orbit" difficulty="3" time="0" hazard="" requirement="" atmosphere=""/>
+    <Maneuver location="Mars" difficulty="3" time="0" hazard="" requirement="Landing" atmosphere="Yes"/>
+  </Card>
+  <Card type="Location" name="Venus" multiple="yes" incapacitation="0" payment="0" unknown="Destroyed" image="Images/VenusPressure.jpg">
+    <Maneuver location="Venus Orbit" time="0" difficulty="6" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Venus" multiple="yes" incapacitation="0" payment="0" unknown="Supplies" image="Images/VenusLiquid.jpg">
+    <Maneuver location="Venus Orbit" time="0" difficulty="6" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Venus" multiple="yes" incapacitation="0" payment="0" unknown="Supplies" image="Images/VenusLife.jpg">
+    <Maneuver location="Venus Orbit" time="0" difficulty="6" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Ceres" multiple="yes" incapacitation="0" payment="0" unknown="Supplies" image="Images/CeresIce.jpg">
+    <Maneuver location="Outer" time="1" difficulty="3" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Inner" time="3" difficulty="5" hazard="Radiation" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Ceres" multiple="yes" incapacitation="0" payment="0" unknown="" image="Images/Ceres.jpg">
+    <Maneuver location="Outer" time="1" difficulty="3" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Inner" time="3" difficulty="5" hazard="Radiation" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Ceres" multiple="yes" incapacitation="0" unknown="Minerals" payment="50" image="Images/Earth.jpg">
+    <Maneuver location="Outer" time="1" difficulty="3" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Inner" time="3" difficulty="5" hazard="Radiation" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Phobos" multiple="yes" incapacitation="0" payment="0" unknown="" image="Images/Phobos.jpg">
+    <Maneuver location="Mars Orbit" time="0" difficulty="1" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Phobos" multiple="yes" incapacitation="0" unknown="HollowAdvancement" payment="0" image="Images/PhobosMetallic.jpg">
+    <Maneuver location="Mars Orbit" time="0" difficulty="1" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Mars" multiple="yes" incapacitation="0" unknown="Minerals" payment="50" image="Images/MarsMineral.jpg">
+    <Maneuver location="Mars Orbit" time="0" difficulty="3" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Mars" multiple="yes" incapacitation="0" payment="0" unknown="Supplies" image="Images/MarsLife.jpg">
+    <Maneuver location="Mars Orbit" time="0" difficulty="3" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Mars" multiple="yes" incapacitation="0" payment="0" unknown="" image="Images/Mars.jpg">
+    <Maneuver location="Mars Orbit" time="0" difficulty="3" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Inner" multiple="" incapacitation="0" unknown="" payment="0" image="Images/InnerPlanetsTransfer.jpg">
+    <Maneuver location="Earth Orbit" difficulty="3" time="1" hazard="" requirement="" atmosphere=""/>
+    <Maneuver location="Mercury Fly-By" difficulty="5" time="1" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Venus Fly-By" difficulty="2" time="1" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Venus Orbit" difficulty="3" time="1" hazard="Radiation" requirement="" atmosphere=""/>
+    <Maneuver location="Ceres" difficulty="5" requirement="Landing" time="1" hazard="Radiation" atmosphere=""/>
+    <Maneuver location="Mars Orbit" difficulty="4" time="2" hazard="Radiation" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Mercury Fly-By" multiple="" incapacitation="0" payment="0" unknown="" image="Images/MercuryFlyBy.jpg">
+    <Maneuver location="Mercury" difficulty="4" time="0" hazard="" requirement="Landing" atmosphere=""/>
+    <Maneuver location="Mercury Orbit" difficulty="2" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Mercury Orbit" multiple="" incapacitation="0" payment="0" unknown="" image="Images/MercuryOrbit.jpg">
+    <Maneuver location="Mercury" difficulty="2" time="0" hazard="" requirement="Landing" atmosphere=""/>
+    <Maneuver location="Inner" difficulty="7" time="1" hazard="Radiation" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Mercury" multiple="yes" incapacitation="0" payment="0" unknown="" image="Images/Mercury.jpg">
+    <Maneuver location="Mercury Orbit" difficulty="2" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Location" name="Mercury" multiple="yes" incapacitation="0" unknown="Minerals" payment="50" image="Images/MercuryMinerals.jpg">
+    <Maneuver location="Mercury Orbit" difficulty="2" time="0" hazard="" requirement="" atmosphere=""/>
+  </Card>
+  <Card type="Radiation" level="0" image="Images/SolarRadiationLevel0.jpg"/>
+  <Card type="Radiation" level="1" image="Images/SolarRadiationLevel1.jpg"/>
+  <Card type="Radiation" level="2" image="Images/SolarRadiationLevel2.jpg"/>
+  <Card type="Outcome" name="success" chance=".666" remove="10" image="Images/Success.jpg"/>
+  <Card type="Outcome" name="minor" chance=".167" remove="5" image="Images/Minor.jpg"/>
+  <Card type="Outcome" name="major" chance=".167" remove="5" image="Images/Major.jpg"/>
+  <Card type="Spacecraft" Agency="NASA" image1="Images/SpacecraftNasa1.png" image2="Images/SpacecraftNasa2.png" image3="Images/SpaceCraftNasa3.png" image4="Images/SpacecraftNasa4.png"/>
+  <Card type="Spacecraft" Agency="CNES" image1="Images/SpacecraftCNES1.png" image2="Images/SpacecraftCNES2.png" image3="Images/SpacecraftCNES3.png" image4="Images/SpacecraftCNES4.png"/>
+  <Card type="Spacecraft" Agency="ISAS" image1="Images/SpacecraftISAS1.png" image2="Images/SpacecraftISAS2.png" image3="Images/SpacecraftISAS3.png" image4="Images/SpacecraftISAS4.png"/>
+  <Card type="Spacecraft" Agency="OKb-1" image1="Images/SpacecraftOKb-11.png" image2="Images/SpacecraftOKb-12.png" image3="Images/SpacecraftOKb-13.png" image4="Images/SpacecraftOKb-14.png"/>
+  <Card type="Spacecraft" Agency="SAC" image1="Images/SpacecraftSAC1.png" image2="Images/SpacecraftSAC2.png" image3="Images/SpacecraftSAC3.png" image4="Images/SpacecraftSAC4.png"/>
+  <Card type="Mission" requirement="Capsule" location="Space" diffculty="Easy" time="0" points="1" image="Images/ProbeInSapce.jpg"/>
+  <Card type="Mission" requirement="Capsule" location="Space" diffculty="Easy" time="0" points="2" image="Images/ProbeInEarthOrbit.jpg"/>
+  <Card type="Mission" requirement="Astronaut" location="Space" diffculty="Easy" time="0" points="2" image="Images/ManToSpaceAndBack.jpg"/>
+  <Card type="Mission" requirement="Capsule" location="Lunar Fly-By" diffculty="Easy" time="0" points="4" image="Images/RevealMoon.jpg"/>
+  <Card type="Mission" requirement="Astronaut" location="Earth Orbit" diffculty="Easy" time="0" points="4" image="Images/ManToEarthOrbitAndBack.jpg"/>
+  <Card type="Mission" requirement="Capsule" location="Mars Fly-By" diffculty="Easy" time="0" points="5" image="Images/RevealMars.jpg"/>
+  <Card type="Mission" requirement="Capsule" location="Moon" time="0" difficulty="Medium" points="6" image="Images/ProbeOnMoon.jpg"/>
+  <Card type="Mission" requirement="Astronaut" location="Earth Orbit" difficulty="Medium" time="1" points="6" image="Images/ManInSpaceStartOfYear.jpg"/>
+  <Card type="Mission" requirement="Capsule" location="Venus Fly-By" difficulty="Medium" time="0" points="6" image="Images/RevealVenus.jpg"/>
+  <Card type="Mission" requirement="Capsule" location="Mars" time="0" difficulty="Medium" points="7" image="Images/ProbeOnMars.jpg"/>
+  <Card type="Mission" requirement="Capsule" location="Mercury Fly-By" time="0" difficulty="Medium" points="7" image="Images/RevealMercury.jpg"/>
+  <Card type="Mission" requirement="Capsule" location="Ceres" time="0" difficulty="Medium" points="8" image="Images/ProbeOnCeres.jpg"/>
+  <Card type="Mission" requirement="Sample" location="Moon" time="0" difficulty="Medium" points="10" image="Images/MoonSampleOnEarth.jpg"/>
+  <Card type="Mission" requirement="Capsule" location="Venus" time="0" difficulty="Medium" points="11" image="Images/ProbeOnVenus.jpg"/>
+  <Card type="Mission" requirement="Astronaut" location="Moon" time="0" difficulty="Medium" points="12" image="Images/ManToMoonAndBack.jpg"/>
+  <Card type="Mission" requirement="Sample" location="Phobos" time="0" difficulty="Medium" points="12" image="Images/PhobosSampleOnEarth.jpg"/>
+  <Card type="Mission" requirement="Capsule" location="Mercury" time="0" difficulty="Medium" points="13" image="Images/ProbeOnMercury.jpg"/>
+  <Card type="Mission" requirement="Sample" location="Ceres" time="0" difficulty="Hard" points="14" image="Images/CereSampleOnEarth.jpg"/>
+  <Card type="Mission" requirement="Astronaut" location="Moon" time="1" difficulty="Hard" points="15" image="Images/ManOnMoonYear.jpg"/>
+  <Card type="Mission" requirement="Sample" location="Mars" time="0" difficulty="Hard" points="16" image="Images/MarsSampleonEarth.jpg"/>
+  <Card type="Mission" requirement="Sample" location="Mercury" time="0" difficulty="Hard" points="19" image="Images/MercurySampleOnEarth.jpg"/>
+  <Card type="Mission" requirement="Astronaut" location="Mars" time="1" difficulty="Hard" points="20" image="Images/ManOnMarsStartofYear.jpg"/>
+  <Card type="Mission" requirement="Astronaut" location="Mars" time="0" difficulty="Hard" points="24" image="Images/ManOnMarsAndBack.jpg"/>
+  <Card type="Mission" requirement="Sample" location="Venus" time="0" difficulty="Hard" points="24" image="Images/VenusSampleOnEarth.jpg"/>
+  <Card type="Mission" requirement="Astronaut" location="Venus" time="1" difficulty="Hard" points="27" image="Images/ManOnVenusStartOfYear.jpg"/>
+  <Card type="Mission" requirement="Astronaut" location="Venus" time="0" difficulty="Hard" points="32" image="Images/ManOnVenusAndBack.jpg"/>
+  <Card type="Mission" requirement="LifeSample" location="Any" time="0" difficulty="Hard" points="40" image="Images/LifeSampleOnEarth.jpg"/>
+  <Card type="Advancement" name="Atlas" minor="NoThrust" major="Destroyed" outcomes="3" price="10" image="Images/AtlasAdvancement.jpg"/>
+  <Card type="Advancement" name="Ion" minor="NoThrust" major="Destroyed" outcomes="3" price="10" image="Images/IonAdvancement.jpg"/>
+  <Card type="Advancement" name="Landing" minor="DamagedComponent" major="Destroyed" outcomes="3" price="10" image="Images/LandingAdvancement.jpg"/>
+  <Card type="Advancement" name="Life Support" minor="Death" major="Death" outcomes="3" price="10" image="Images/LifeSupportAdvancement.jpg"/>
+  <Card type="Advancement" name="Re-entry" minor="Damaged" major="Death" outcomes="3" price="10" />
+  <Card type="Advancement" name="Rendezvous" minor="DamagedComponent" major="DamagedComponent" outcomes="3" price="10" image="Images/RendezvousAdvancement.jpg"/>
+  <Card type="Advancement" name="Saturn" minor="NoThrust" major="Destroyed" outcomes="3" price="10"/>
+  <Card type="Advancement" name="Soyuz" minor="NoThrust" major="Destroyed" outcomes="3" price="10"/>
+  <Card type="Advancement" name="Surveying" minor="Failure" major="Failure" outcomes="1" price="10" image="Images/SurveyingAdvancementAdvancement.jpg"/>
+</Cards>
